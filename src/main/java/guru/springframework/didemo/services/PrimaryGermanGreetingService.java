@@ -6,10 +6,10 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Primary //note that primary overrides anything reflected without a qualifier
-@Profile({"en", "default"})
-public class PrimaryEnglishGreetingService implements GreetingService {
+@Profile("de")
+public class PrimaryGermanGreetingService implements GreetingService {
     @Override
     public String sayGreeting() {
-        return "Hello from primary greeting service";
+        return "This is a bit German - not going to type the german in!";
     }
 }
