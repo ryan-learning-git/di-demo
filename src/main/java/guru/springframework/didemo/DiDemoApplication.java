@@ -7,10 +7,12 @@ import guru.springframework.didemo.controllers.dependencyinjectionwithspring.Pro
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 import java.lang.reflect.Constructor;
 
 @SpringBootApplication
+//@ComponentScan(basePackages = {"guru"}) //Can use this if we want to include stuff from outside of the package this file is in.
 public class DiDemoApplication {
 
 	public static void main(String[] args) {
