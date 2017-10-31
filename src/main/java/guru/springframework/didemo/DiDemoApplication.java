@@ -5,6 +5,7 @@ import guru.springframework.didemo.controllers.dependencyinjectionwithspring.Con
 import guru.springframework.didemo.controllers.dependencyinjectionwithspring.GetterInjectedController;
 import guru.springframework.didemo.controllers.dependencyinjectionwithspring.PropertyInjectedController;
 import guru.springframework.didemo.examplebeans.FakeDataSource;
+import guru.springframework.didemo.examplebeans.FakeJmsBroker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -28,8 +29,10 @@ public class DiDemoApplication {
 //		System.out.println(ctx.getBean(ConstructorInjectedController.class).sayHello());
 
         FakeDataSource fakeDataSource = (FakeDataSource) ctx.getBean(FakeDataSource.class);
+        FakeJmsBroker fakeJmsBroker = (FakeJmsBroker) ctx.getBean(FakeJmsBroker.class);
 
-        System.out.println("User is " + fakeDataSource.getUser() + ", password is " + fakeDataSource.getPass());
+        System.out.println("fakeDataSource: User is " + fakeDataSource.getUser() + ", password is " + fakeDataSource.getPass());
+        System.out.println("fakeJmsBroker: User is " + fakeJmsBroker.getUser() + ", password is " + fakeJmsBroker.getPass());
 
 	}
 }
