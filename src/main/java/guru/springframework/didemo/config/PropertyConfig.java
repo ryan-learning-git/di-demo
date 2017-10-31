@@ -13,10 +13,10 @@ import org.springframework.core.env.Environment;
 
 @Configuration
 //@PropertySource({"classpath:datasource.properties", "classpath:jms.properties"})
-@PropertySources({
-        @PropertySource("classpath:datasource.properties"),
-        @PropertySource("classpath:jms.properties")
-})
+//@PropertySources({
+//        @PropertySource("classpath:datasource.properties"),
+//        @PropertySource("classpath:jms.properties")
+//})
 public class PropertyConfig {
 
     @Autowired
@@ -59,10 +59,10 @@ public class PropertyConfig {
         return jmsBroker;
     }
 
-    @Bean
-    public static PropertySourcesPlaceholderConfigurer properties(){
-        PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer = new PropertySourcesPlaceholderConfigurer();
-        return propertySourcesPlaceholderConfigurer;
-    }
+//    @Bean
+//    public static PropertySourcesPlaceholderConfigurer properties(){
+//        PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer = new PropertySourcesPlaceholderConfigurer();
+//        return propertySourcesPlaceholderConfigurer;
+//    }
 
 }
