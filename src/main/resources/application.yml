@@ -1,0 +1,9 @@
+guru.jms.username: JMS Username
+guru.jms.password: mypassword
+guru.jms.dburl: MyUrl
+
+guru:
+  jms:
+    username: JMS Username
+    password: mypassword
+    dburl: MyUrl
