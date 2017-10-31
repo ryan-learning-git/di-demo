@@ -1,0 +1,30 @@
+# this is a comment
+
+name: Ryan
+
+names: #This is a list
+    - Bob
+    - Alvaro
+    - Ismail
+
+pound_sign: "#" #this is a value.
+
+book:
+    author: Bob Smith
+    publisher: Random House
+
+truth: yes #boolean
+
+another_truth: true #boolean - can use no, false, True, False, FALSE, TRUE, etc
+
+string_val: "This is it's quote" #if there's a single-quote in there, we must wrap in a double-quote - this also applies to :
+
+include_new_lines: |
+    asdf asdf
+    asdf asfg
+
+ignore_new_lines: >
+    This lot will
+    all appear
+    in a single
+    line.
